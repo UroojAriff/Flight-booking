@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Flightbooking365- American air with best airfares" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flightbooking365 - Fly With Us</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+     <!-- social icon link  -->
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  rel="stylesheet"
+/>
+
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+     <header>
+  <nav
+    id="navbar-top"
+    class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm"
+  >
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="#">
+        <img src=".vscode\img\logo1.PNG" alt="FlightBooking365 Logo" style="height: 50px;" />
+      </a>
+    
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <i class="bi bi-menu-button-fill"></i>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem; ">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" style="color: #3f396d;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" style="color: #3f396d;">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features" style="color: #3f396d;">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonial" style="color: #3f396d;">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" style="color: #3f396d;">Contact</a>
+          </li>
+        </ul>
+
+        <div class="ms-3">
+          <a href="tel:+18554910856" style="text-decoration: none">
+            <button
+              class="c-btn py-2 px-4 rounded-pill d-none d-md-block"
+              style="border: none; background-color: #3f396d; color: white"
+            >
+              Contact Us
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <!-- navbar ends here -->
+     <main style="padding-top: 0px;">
+
+    <!-- Hero Section with Description   background-image: url('.vscode/img/sky.jpg'); background-size: cover; background-position: center;"-->
+<section id="hero" class="d-flex align-items-center justify-content-center flex-wrap" style="padding-top: 100px" > 
+  <div class="col-12 col-md-6 text-center text-md-start" data-aos="slide-right" >
+    <h1
+    class="fw-bold display-4"
+    style="
+      padding: 20px;
+      color: #ff6600; /* New text color */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    "
+  >
+    Fly High, Reach Far!
+  </h1>
+  
+      <p class="text-black lead" style="padding: 20px;">
+          Experience the world like never before. With best airfares, exceptional service, and a vast selection of destinations, we make your travel dreams a reality.
+      </p>
+      <p class="text-black" style="padding: 20px;">
+          Join thousands of satisfied travellers and book your next adventure with our flight hub today!
+      </p>
+      <h6 class="text-black lead" style="padding: 20px;">
+        <a href="tel:+18554910856" style="text-decoration: none; color: inherit;">
+          We are just a call away!
+        </a>
+      </h6>
+    </div>
+      <div class="col-12 col-md-6 text-center" data-aos="slide-left" style="padding-top: 20px;">
+        <div  class="oval-container position-relative mx-auto">
+          <img src=".vscode/img/aeroplane.webp" alt="cheapest airline" class="img-fluid mt-4" style="max-width: 100%; height: auto; z-index: 2; position: relative;" />
+          <video autoplay loop muted class="video-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+            <source src=".vscode/img/video.mp4" type="video/mp4" />
+          </video>
+       
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+      <div class="container">
+        <h2 class="text-center" style="color: #FF6E00; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Why Book With Us?</h2>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body text-center">
+                <i class="bi bi-airplane-fill fs-1 text-primary"></i>
+                <h5 class="card-title mt-3">Budget Air</h5>
+                <p class="card-text">We guarantee the best deals and cheapest airline for your flight bookings.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body text-center">
+                <i class="bi bi-clock-fill fs-1 text-primary"></i>
+                <h5 class="card-title mt-3">Fast Booking</h5>
+                <p class="card-text">Book a flight over the phone and enjoy a seamless booking experience with our fast and reliable system.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body text-center">
+                <i class="bi bi-shield-check fs-1 text-primary"></i>
+                <h5 class="card-title mt-3">Secure Payments</h5>
+                <p class="card-text">Your personal and payment information is protected with us.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 style="padding: 20px; color: #FF6E00; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">About Us</h2>
+            <p style="padding: 20px;">
+              FlightBooking365 is your go-to platform for hassle-free flight booking. We work with major airlines worldwide to bring you the best deals on both domestic and international flights. Whether you want to travel from India to Canada, southwest or anywhere. With us, you can expect seamless service from booking to boarding.
+            </p>
+            
+    
+            <!-- Bullet Points -->
+            <ul class="bullet-points" style="padding: 20px;">
+              <li>Best prices for domestic and international flights</li>
+              <li>24/7 customer support for a seamless experience</li>
+              <li>Partnerships with leading global airlines</li>
+              <li>User-friendly platform for easy booking</li>
+              <li>Special Assistance for travellers on wheelchair</li>
+              <li>Secure payment options for worry-free transactions</li>
+            </ul>
+            <a href="tel:+18554910856" style="text-decoration: none">
+            <button
+                class="c-btn py-2 px-4 rounded-pill d-none d-md-block"
+                style="border: none; background-color: #3f396d; color: white"
+              >
+                Book Now!
+              </button>
+            </a>
+          </div>
+    
+          <div class="col-md-6">
+            <img src=".vscode/img/Image.png" class="img-fluid" alt="American air midway airport flights">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Add this button inside the body -->
+<!-- Add this button inside the body -->
+<a href="tel:+18554910856" class="call-button">
+  <i class="fas fa-phone"></i>
+</a>
+
+
+    <!-- testimonial section starts  -->
+    <section class="testimonial mt-5 pt-5" id="testimonial">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col-10" data-aos="slide-right">
+          <img src=".vscode\img\tastimonials-img.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+          <div class="heading">
+            <small>Testimonials</small>
+            <h3>Happy Clients Feedback</h3>
+            <!-- here we will use carousel element from bootstrap -->
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
+                        consecteaur aeci velit, sed quia non numquam eius modi
+                        tempora incidunt ut lao magnam aliquam quaerat ...
+                      </p>
+                      <h4>Kevin Andrew</h4>
+                      <small class="fs-6 text-muted">CEO of Company</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
+                        consecteaur aeci velit, sed quia non numquam eius modi
+                        tempora incidunt ut lao magnam aliquam quaerat ...
+                      </p>
+                      <h4>Kevin Andrew</h4>
+                      <small class="fs-6 text-muted">CEO of Company</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
+                        consecteaur aeci velit, sed quia non numquam eius modi
+                        tempora incidunt ut lao magnam aliquam quaerat ...
+                      </p>
+                      <h4>Kevin Andrew</h4>
+                      <small class="fs-6 text-muted">CEO of Company</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="nextprev-btn rounded-pill prev-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left-circle-fill prev"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="nextprev-btn rounded-pill next-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right-circle-fill next"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial ends here -->
+<!-- contact section starts -->
+<section class="contact py-5" id="contact">
+  <div class="heading text-center" style="color: black;">
+    <small>Get in Touch</small>
+    <h3>Any Questions? Feel Free to Contact</h3>
+  </div>
+  <div class="row justify-content-evenly mt-5">
+    <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+        <div class="col-11">
+          <p><a href="tel:+18889180045"style="color: black; text-decoration: none;">+18554910856</a></p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+        <div class="col-11">
+          <p><a href="tel:+18889180045"style="color: black; text-decoration: none;">+18889180045</a></p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+        <div class="col-11">
+          <p><a href="tel:+18889180045" style="color: black; text-decoration: none;">+18554910856</a></p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+         
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+      <div class="contact-form">
+        <!-- Contact Form -->
+        <form id="contactForm">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              name="mobile"
+              placeholder="Mobile No."
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="c-btn py-2 px-4 rounded-pill"
+            style="border: none; background-color: #3f396d; color: white"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Response Submitted!</div>
+</section>
+
+</main>
+<!-- contact section ends here -->
+ 
+
+   <!-- Footer -->
+<footer id="footer" class="py-4" style="background-color: #FF6E00; color: white;" >
+  <div class="container text-center">
+    <!-- Logo or Title -->
+    <a class="navbar-brand fw-bold fs-2 mb-3" href="#" >
+      <img src=".vscode\img\logo1.PNG" alt="cheapest airlines flightbooking" style="height: 50px;" />
+    </a>
+
+    <!-- Social Media Links -->
+    <div class="social-links my-3">
+      <a href="https://www.instagram.com/flightbooking365/" target="_blank" style="color: white; margin: 0 10px;">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://www.facebook.com/flightbooking365" target="_blank" style="color: white; margin: 0 10px;">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+    </div>
+
+    <!-- Contact Details -->
+    <div class="contact-details my-3">
+      <p>Email: info@flightbooking365.com</p>
+      <p>
+        Phone: <a href="tel:+18889180045" style="color: white; text-decoration: none;">+18889180045</a>
+      </p>
+    </div>
+
+    <!-- Copyright -->
+    <p>&copy; 2024 FlightBooking365. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+IGaTVz4l5Yd2ym/JmoF5YB0KIwLy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+     <script src="script.js"></script>
+  </body>
+</html>
