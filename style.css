@@ -1,7 +1,11 @@
 body{
-    font-family: 'Josefin Sans', sans-serif;
+    
+   font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
-    background-image: url('.vscode/img/flight.jpg');
+    margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 /* Navbar shadow for better visibility */
 .sticky-top {
