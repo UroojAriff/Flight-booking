@@ -53,6 +53,49 @@ nav .nav-link:hover {
     width: 100%; 
     left: 0; 
   }
+/* Media Queries */
+
+/* For small screens (max-width: 576px) */
+@media (max-width: 576px) {
+  #navbar-top .navbar-brand {
+    font-size: 1.4rem; /* Smaller brand size on phones */
+  }
+
+  #navbar-top .navbar-nav {
+    text-align: center; /* Center the nav links when collapsed */
+  }
+
+  #navbar-top .nav-item {
+    margin-bottom: 10px; /* Add spacing between nav items in collapsed mode */
+  }
+
+  #navbar-top .navbar-collapse {
+    background-color: white; /* Background for collapsed nav */
+  }
+
+  .c-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+/* For medium screens (min-width: 577px) and (max-width: 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  #navbar-top .navbar-brand {
+    font-size: 1.6rem;
+  }
+
+  #navbar-top .navbar-nav {
+    text-align: center;
+  }
+
+  .c-btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
+
+
 /* testimonial section starts */
 .testimonial img:hover{
     transform: scale(1.2,1.2);
