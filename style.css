@@ -199,6 +199,58 @@ nav .nav-link:hover {
   object-fit: cover;
   z-index: 1;
 }
+@media (max-width: 576px) {
+  .oval-container {
+    width: 100%; /* Take full width on small screens */
+    max-width: 300px; /* Restrict size on smaller devices */
+  }
+
+  .oval-container img,
+  .oval-container .video-bg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .oval-container {
+    width: 80%; /* Keep the container size at 80% */
+    max-width: 400px; /* Slightly smaller for tablets */
+  }
+
+  .oval-container img,
+  .oval-container .video-bg {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .call-button {
+    bottom: 10px;
+    right: 10px;
+    padding: 10px; /* Reduce padding for smaller screens */
+    font-size: 18px;
+  }
+
+  .call-button i {
+    font-size: 18px;
+  }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .call-button {
+    bottom: 15px;
+    right: 15px;
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  .call-button i {
+    font-size: 20px;
+  }
+}
 
 /* Airplane image styling */
 img {
