@@ -1,12 +1,12 @@
-body{
-    
-   font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    margin: 0;
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
 }
+
 /* Navbar shadow for better visibility */
 .sticky-top {
   position: sticky;
@@ -21,226 +21,219 @@ nav .nav-link:hover {
   transition: color 0.3s ease;
 }
 
-/* styling menu icon */
-.nav-menu{
-    border: none;
-    background-color: #fff;
-    font-size: 1.5rem;
-    color: #fca61f;
+/* Styling menu icon */
+.nav-menu {
+  border: none;
+  background-color: #fff;
+  font-size: 1.5rem;
+  color: #fca61f;
 }
-/* styling navbar links  */
-.navbar-nav a{
-    color: black;
-    position: relative;
+
+/* Styling navbar links */
+.navbar-nav a {
+  color: black;
+  position: relative;
 }
-.navbar-nav a:hover{
-    color: #fca61f;
+
+.navbar-nav a:hover {
+  color: #fca61f;
 }
-.navbar-nav a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    top: 35px;
-    position: absolute;
-    background: #fca61f;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-.navbar-nav a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
+
+.navbar-nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  top: 35px;
+  position: absolute;
+  background: #fca61f;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 /* Media Queries */
 
 /* For small screens (max-width: 576px) */
 @media (max-width: 576px) {
   #navbar-top .navbar-brand {
-    font-size: 1.4rem; /* Smaller brand size on phones */
+      font-size: 1.4rem; /* Smaller brand size on phones */
   }
 
   #navbar-top .navbar-nav {
-    text-align: center; /* Center the nav links when collapsed */
+      text-align: center; /* Center the nav links when collapsed */
   }
 
   #navbar-top .nav-item {
-    margin-bottom: 10px; /* Add spacing between nav items in collapsed mode */
+      margin-bottom: 10px; /* Add spacing between nav items in collapsed mode */
   }
 
   #navbar-top .navbar-collapse {
-    background-color: white; /* Background for collapsed nav */
+      background-color: white; /* Background for collapsed nav */
   }
 
   .c-btn {
-    font-size: 0.9rem;
-    padding: 10px 20px;
+      font-size: 0.9rem;
+      padding: 10px 20px;
   }
 }
 
 /* For medium screens (min-width: 577px) and (max-width: 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
   #navbar-top .navbar-brand {
-    font-size: 1.6rem;
+      font-size: 1.6rem;
   }
 
   #navbar-top .navbar-nav {
-    text-align: center;
+      text-align: center;
   }
 
   .c-btn {
-    font-size: 1rem;
-    padding: 12px 24px;
+      font-size: 1rem;
+      padding: 12px 24px;
   }
 }
 
+/* Testimonial section starts */
+.testimonial img:hover {
+  transform: scale(1.2, 1.2);
+  transition-duration: 1s;
+}
 
-/* testimonial section starts */
-.testimonial img:hover{
-    transform: scale(1.2,1.2);
-    transition-duration: 1s;
+.testimonial h4 {
+  color: #3f396d;
 }
-.testimonial h4{
-    color: #3f396d;
+
+.testimonial i {
+  font-size: 2.9rem;
+  color: #FF6E00;
 }
-.testimonial i{
-    font-size: 2.9rem;
-    color: #FF6E00;
-    
+
+.testimonial .nextprev-btn {
+  border: none;
+  background-color: #fff;
 }
-.testimonial .nextprev-btn{
-    border: none;
-    background-color: #fff;
+
+.prev:hover, .prev-btn:hover {
+  color: #6f34fe;
+  transform: translateX(-10px);
+  transition-duration: 1s;
 }
-.prev:hover,.prev-btn:hover{
-    color:#6f34fe;
-    transform: translateX(-10px);
-    transition-duration: 1s;
+
+.next:hover, .next-btn:hover {
+  color: #6f34fe;
+  transform: translateX(10px);
+  transition-duration: 1s;
 }
-.next:hover,.next-btn:hover{
-    color:#6f34fe;
-    transform: translateX(10px);
-    transition-duration: 1s;
-}
+
 /* Bullet Points Styling */
 .bullet-points {
-    margin-top: 15px;
-    padding-left: 20px;
-    list-style-type: disc; /* Standard bullet points */
-  }
-  
-  .bullet-points li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    color: #333;
-  }
-  .img-fluid {
-    max-width: 100%;
-    height: auto;
+  margin-top: 15px;
+  padding-left: 20px;
+  list-style-type: disc; /* Standard bullet points */
 }
-/* contact section starts */
-.contact{
-    background-color: #f3f3f3;
+
+.bullet-points li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #333;
 }
-.contact-details i{
-    font-size: 1.5rem;
-    color: #fca61f;
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
-.contact-details p{
-    font-size: 1.2rem;
-    margin-left: 1rem;
+
+/* Contact section starts */
+.contact {
+  background-color: #f3f3f3;
 }
-.contact-form .form-control:focus{
-    box-shadow: none;
-    border: 1px solid #fca61f;
+
+.contact-details i {
+  font-size: 1.5rem;
+  color: #fca61f;
 }
-.contact-form .form-control{
-    padding: 10px 10px;
-    width: 80%;
+
+.contact-details p {
+  font-size: 1.2rem;
+  margin-left: 1rem;
 }
+
+.contact-form .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #fca61f;
+}
+
+.contact-form .form-control {
+  padding: 10px 10px;
+  width: 80%;
+}
+
 /* Style for the call button */
 .call-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #FF6E00;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
-    font-size: 24px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 1000; /* ensures it stays on top of other elements */
-    transition: background-color 0.3s ease;
-  }
-  
-  .call-button i {
-    margin: 0;
-  }
-  
-  .call-button:hover {
-    background-color:#FF6E00;
-  }
- /* Default call-button styles for larger screens */
-.call-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #FF6E00;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
+  bottom: 20px; /* Position from the bottom */
+  right: 20px;  /* Position from the right */
+  background-color: #FF6E00; /* Button color */
+  color: white; /* Text color */
+  padding: 15px; /* Button padding */
+  border-radius: 50%; /* Circular button */
   text-align: center;
   text-decoration: none;
-  font-size: 24px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-  transition: background-color 0.3s ease;
+  font-size: 24px; /* Button text size */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  z-index: 1000; /* Ensures it stays on top */
+  transition: background-color 0.3s ease; /* Hover transition */
 }
 
 .call-button i {
-  margin: 0;
+  margin: 0; /* Reset margin */
 }
 
 .call-button:hover {
-  background-color: #ff8800;
+  background-color: #ff8800; /* Change color on hover */
 }
 
 /* Ensure button stays at the same position on mobile screens */
 @media (max-width: 576px) {
   .call-button {
-    bottom: 20px; /* Same bottom position as larger screens */
-    right: 20px;  /* Same right position as larger screens */
-    padding: 10px;
-    font-size: 18px;
+      bottom: 20px; /* Same bottom position */
+      right: 20px;  /* Same right position */
+      padding: 10px; /* Reduced padding */
+      font-size: 18px; /* Smaller font size */
   }
 
   .call-button i {
-    font-size: 18px;
+      font-size: 18px; /* Smaller icon size */
   }
 }
 
 /* For medium screens (tablets) */
 @media (min-width: 577px) and (max-width: 768px) {
   .call-button {
-    bottom: 20px; /* Same bottom position as larger screens */
-    right: 20px;  /* Same right position as larger screens */
-    padding: 12px;
-    font-size: 20px;
+      bottom: 20px; /* Same bottom position */
+      right: 20px;  /* Same right position */
+      padding: 12px; /* Padding for medium screens */
+      font-size: 20px; /* Font size adjustment */
   }
 
   .call-button i {
-    font-size: 20px;
+      font-size: 20px; /* Icon size adjustment */
   }
 }
 
-  /* Make the container relative to position images inside it */
+/* Make the container relative to position images inside it */
 .position-relative {
-    position: relative;
-  }
-  /* Toast notification styling */
+  position: relative;
+}
+
+/* Toast notification styling */
 .toast {
   visibility: hidden;
   min-width: 250px;
@@ -263,6 +256,7 @@ nav .nav-link:hover {
   visibility: visible;
   opacity: 1;
 }
+
 /* Oval frame container */
 .oval-container {
   position: relative;
@@ -286,72 +280,72 @@ nav .nav-link:hover {
   object-fit: cover;
   z-index: 1;
 }
+
+/* Adjust for small screens */
 @media (max-width: 576px) {
   .oval-container {
-    width: 100%; /* Take full width on small screens */
-    max-width: 300px; /* Restrict size on smaller devices */
+      width: 100%; /* Take full width on small screens */
+      max-width: 300px; /* Restrict size on smaller devices */
   }
 
   .oval-container img,
   .oval-container .video-bg {
-    width: 100%;
-    height: auto;
+      width: 100%;
+      height: auto;
   }
 }
 
-/* For medium screens (tablets) */
-@media (min-width: 577px) and (max-width: 768px) {
+/* Adjust video and image size on smaller screens */
+@media (max-width: 768px) {
   .oval-container {
-    width: 80%; /* Keep the container size at 80% */
-    max-width: 400px; /* Slightly smaller for tablets */
+      width: 100%; /* Adjust width for smaller screens */
+      height: auto; /* Maintain aspect ratio */
   }
 
-  .oval-container img,
-  .oval-container .video-bg {
-    width: 100%;
-    height: auto;
+  .oval-container video,
+  .oval-container img {
+      width: 100%;
+      height: auto;
   }
-}
-@media (max-width: 576px) {
+
+  /* Reduce padding in hero section to save space */
+  #hero {
+      padding: 50px 20px;
+  }
+
+  /* Reduce font size of hero text */
+  #hero h1 {
+      font-size: 2rem;
+  }
+
+  /* Adjust the call button for mobile screens */
   .call-button {
-    bottom: 10px;
-    right: 10px;
-    padding: 10px; /* Reduce padding for smaller screens */
-    font-size: 18px;
+      position: fixed;
+      bottom: 20px; /* Stick to the bottom */
+      right: 20px;
+      z-index: 1000;
+      padding: 10px 20px;
+      font-size: 0.8rem;
   }
 
   .call-button i {
-    font-size: 18px;
+      font-size: 1.5rem; /* Adjust the icon size */
   }
 }
 
-/* For medium screens (tablets) */
-@media (min-width: 577px) and (max-width: 768px) {
-  .call-button {
-    bottom: 15px;
-    right: 15px;
-    padding: 12px;
-    font-size: 20px;
-  }
-
-  .call-button i {
-    font-size: 20px;
-  }
-}
-
-/* Airplane image styling */
-img {
-  position: relative;
-  z-index: 2;
-  animation: flyAnimation 3s ease-in-out infinite alternate; /* Animation applied here */
-}
-
-/* Animation keyframes for the airplane image */
+/* Animation for airplane */
 @keyframes flyAnimation {
   0% {
-    transform: translateY(0); /* Start at original position */
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
   }
   100% {
-    transform: translateY(-10px); /* Move up by 10 pixels */
+      transform: translateY(0);
   }
+}
+
+.airplane {
+  animation: flyAnimation 5s linear infinite; /* Animation duration and repetition */
 }
