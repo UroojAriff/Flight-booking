@@ -183,15 +183,59 @@ nav .nav-link:hover {
   .call-button:hover {
     background-color:#FF6E00;
   }
-  @media (max-width: 768px) {
-    .call-button {
-      padding: 10px;  /* Reduce padding */
-      font-size: 20px; /* Adjust font size */
-      bottom: 10px;    /* Adjust position if necessary */
-      right: 10px;     /* Adjust position if necessary */
-    }
+ /* Default call-button styles for larger screens */
+.call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FF6E00;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.call-button i {
+  margin: 0;
+}
+
+.call-button:hover {
+  background-color: #ff8800;
+}
+
+/* Ensure button stays at the same position on mobile screens */
+@media (max-width: 576px) {
+  .call-button {
+    bottom: 20px; /* Same bottom position as larger screens */
+    right: 20px;  /* Same right position as larger screens */
+    padding: 10px;
+    font-size: 18px;
   }
-  
+
+  .call-button i {
+    font-size: 18px;
+  }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .call-button {
+    bottom: 20px; /* Same bottom position as larger screens */
+    right: 20px;  /* Same right position as larger screens */
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  .call-button i {
+    font-size: 20px;
+  }
+}
+
   /* Make the container relative to position images inside it */
 .position-relative {
     position: relative;
