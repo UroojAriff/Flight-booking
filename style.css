@@ -199,14 +199,23 @@ nav .nav-link:hover {
 .call-button:hover {
   background-color: #ff8800; /* Change color on hover */
 }
+.callbutton {
+  color: #ff6600; /* Orange color */
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px;
+}
 
+.callbutton i {
+  margin-right: 8px; /* Spacing between the icon and text */
+  font-size: 1.2rem;
+}
 /* Ensure button stays at the same position on mobile screens */
 @media (max-width: 576px) {
   .call-button {
-      bottom: 20px; /* Same bottom position */
-      right: 20px;  /* Same right position */
-      padding: 10px; /* Reduced padding */
-      font-size: 18px; /* Smaller font size */
+      display:none;
   }
 
   .call-button i {
