@@ -199,23 +199,7 @@ nav .nav-link:hover {
 .call-button:hover {
   background-color: #ff8800; /* Change color on hover */
 }
-.callbutton {
-  color: #ff6600; /* Orange color */
-  font-weight: bold;
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 20px;
-}
 
-.callbutton i {
-  margin-right: 0px; /* Spacing between the icon and text */
-  font-size: 2.5rem; /* Increase the Font Awesome icon size */
-
-}
-.callbutton:hover {
-  background-color: #ff8800; /* Change color on hover */
-}
 /* Ensure button stays at the same position on mobile screens */
 @media (max-width: 576px) {
   .call-button {
@@ -361,4 +345,24 @@ nav .nav-link:hover {
 
 .airplane {
   animation: flyAnimation 5s linear infinite; /* Animation duration and repetition */
+}
+/* Center the button for mobile screens */
+@media (max-width: 768px) {
+  .call-btnn {
+    margin: 0 auto; /* Horizontally center */
+    display: block;
+    padding: 15px 30px; /* Adjust padding for a better look */
+    background-color: #FF6E00; /* Ensure the background color is correct */
+    color: white; /* Text color */
+    border: none;
+  }
+  
+  /* Ensure the container or body uses flexbox for centering */
+  .containerr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height for vertical centering */
+  }
 }
