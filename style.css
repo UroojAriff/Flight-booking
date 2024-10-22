@@ -209,8 +209,12 @@ nav .nav-link:hover {
 }
 
 .callbutton i {
-  margin-right: 8px; /* Spacing between the icon and text */
-  font-size: 1.2rem;
+  margin-right: 0px; /* Spacing between the icon and text */
+  font-size: 2.5rem; /* Increase the Font Awesome icon size */
+
+}
+.callbutton:hover {
+  background-color: #ff8800; /* Change color on hover */
 }
 /* Ensure button stays at the same position on mobile screens */
 @media (max-width: 576px) {
